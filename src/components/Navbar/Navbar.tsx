@@ -14,18 +14,18 @@ export default function NavBar() {
           <Box className="flex flex-row items-center space-x-6">
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
               <Link href="/">
-                Pagination App
+                Pagination
               </Link>
             </Typography>
 
             <Typography component="div" sx={{ flexGrow: 1 }}>
               <Link href="/simple" className='text-lg'>
-                simple pagination
+                simple 
               </Link>
             </Typography>
             <Typography component="div" sx={{ flexGrow: 1 }}>
               <Link href="/infit" className='text-lg'>
-                infinit pagination
+                infinit
               </Link>
             </Typography>
 
