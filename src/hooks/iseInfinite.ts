@@ -7,7 +7,7 @@ export const useInfinit = (Url: string) => {
         queryKey: ['infinit'],
         initialPageParam: 1,
         queryFn: async function ({ pageParam }: { pageParam: number }) {
-            let url: string = Url;
+            let url: string = Url + `?page=${pageParam}`;
             const result = await axios.get(url);
             return result.data;
         },

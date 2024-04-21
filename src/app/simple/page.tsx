@@ -39,9 +39,9 @@ const Simple = () => {
           {data?.map((item: itemType) => <MediaCard key={item.id} {...item}/>)}
         </Box>
       </Box>
-      <Box className="flex justify-center mt-12">
-        {next && <Button onClick={(): void => setPageNumber(pageNumber + 1)} variant='contained' color='info'>{'Next >>'}</Button>}
+      <Box className="flex justify-center space-x-5 mt-12">
         {previous && <Button onClick={(): void => setPageNumber(pageNumber - 1)} variant='contained' color='info'>{'<< perivous'}</Button>}
+        {next && <Button onClick={(): void => setPageNumber(pageNumber + 1)} variant='contained' color='info'>{'Next >>'}</Button>}
       </Box>
     </>
   )
